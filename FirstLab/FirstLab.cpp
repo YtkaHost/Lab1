@@ -1,5 +1,7 @@
 #include "pch.h"
 
+//Test 
+
 using namespace System;
 using namespace System::Text;
 
@@ -7,7 +9,7 @@ int main(array<System::String^>^ args)
 {
     Console::OutputEncoding = Encoding::Unicode;
 
-    // Перше завдання
+    // ГЏГҐГ°ГёГҐ Г§Г ГўГ¤Г Г­Г­Гї
     {
         int N = 5;
 
@@ -18,64 +20,64 @@ int main(array<System::String^>^ args)
         double area = L * W;
         double price = area * C;
 
-        Console::WriteLine("Розмір кімнати: {0} метрів на {1} метрів", L, W);
-        Console::WriteLine("Площа кімнати: {0} квадратних метрів", area);
-        Console::WriteLine("Ціна килимового покриття: ${0}", price);
+        Console::WriteLine("ГђГ®Г§Г¬ВіГ° ГЄВіГ¬Г­Г ГІГЁ: {0} Г¬ГҐГІГ°ВіГў Г­Г  {1} Г¬ГҐГІГ°ВіГў", L, W);
+        Console::WriteLine("ГЏГ«Г®Г№Г  ГЄВіГ¬Г­Г ГІГЁ: {0} ГЄГўГ Г¤Г°Г ГІГ­ГЁГµ Г¬ГҐГІГ°ВіГў", area);
+        Console::WriteLine("Г–ВіГ­Г  ГЄГЁГ«ГЁГ¬Г®ГўГ®ГЈГ® ГЇГ®ГЄГ°ГЁГІГІГї: ${0}", price);
     }
 
     Console::WriteLine("----------------------------------------");
 
-    // Друге завдання
+    // Г„Г°ГіГЈГҐ Г§Г ГўГ¤Г Г­Г­Гї
     {
-        Console::Write("Введіть перший рядок: ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј ГЇГҐГ°ГёГЁГ© Г°ГїГ¤Г®ГЄ: ");
         String^ s1 = Console::ReadLine();
 
-        Console::Write("Введіть другий рядок: ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј Г¤Г°ГіГЈГЁГ© Г°ГїГ¤Г®ГЄ: ");
         String^ s2 = Console::ReadLine();
 
         String^ result = String::Concat(s1, s2);
 
-        Console::WriteLine("Об'єднаний рядок: {0}", result);
+        Console::WriteLine("ГЋГЎ'ВєГ¤Г­Г Г­ГЁГ© Г°ГїГ¤Г®ГЄ: {0}", result);
     }
 
     Console::WriteLine("----------------------------------------");
 
-    // Третє завдання
+    // Г’Г°ГҐГІВє Г§Г ГўГ¤Г Г­Г­Гї
     {
-        Console::Write("Введіть перший рядок: ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј ГЇГҐГ°ГёГЁГ© Г°ГїГ¤Г®ГЄ: ");
         String^ s1 = Console::ReadLine();
 
-        Console::Write("Введіть другий рядок: ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј Г¤Г°ГіГЈГЁГ© Г°ГїГ¤Г®ГЄ: ");
         String^ s2 = Console::ReadLine();
 
         int res = String::Compare(s1, s2);
 
         if (res < 0)
-            Console::WriteLine("Перший рядок менший за другий");
+            Console::WriteLine("ГЏГҐГ°ГёГЁГ© Г°ГїГ¤Г®ГЄ Г¬ГҐГ­ГёГЁГ© Г§Г  Г¤Г°ГіГЈГЁГ©");
         else if (res > 0)
-            Console::WriteLine("Перший рядок більший за другий");
+            Console::WriteLine("ГЏГҐГ°ГёГЁГ© Г°ГїГ¤Г®ГЄ ГЎВіГ«ГјГёГЁГ© Г§Г  Г¤Г°ГіГЈГЁГ©");
         else
-            Console::WriteLine("Рядки рівні");
+            Console::WriteLine("ГђГїГ¤ГЄГЁ Г°ВіГўГ­Ві");
     }
 
     Console::WriteLine("----------------------------------------");
 
-    // Четверте завдання
+    // Г—ГҐГІГўГҐГ°ГІГҐ Г§Г ГўГ¤Г Г­Г­Гї
     {
-        Console::Write("Введіть рядок: ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј Г°ГїГ¤Г®ГЄ: ");
         String^ s = Console::ReadLine();
 
         String^ result = "begin" + s + "end";
 
-        Console::WriteLine("Новий рядок: {0}", result);
-        Console::WriteLine("Довжина нового рядка: {0}", result->Length);
+        Console::WriteLine("ГЌГ®ГўГЁГ© Г°ГїГ¤Г®ГЄ: {0}", result);
+        Console::WriteLine("Г„Г®ГўГ¦ГЁГ­Г  Г­Г®ГўГ®ГЈГ® Г°ГїГ¤ГЄГ : {0}", result->Length);
     }
 
     Console::WriteLine("----------------------------------------");
 
-    // П'яте завдання
+    // ГЏ'ГїГІГҐ Г§Г ГўГ¤Г Г­Г­Гї
     {
-        Console::Write("Введіть рядок: ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј Г°ГїГ¤Г®ГЄ: ");
         String^ s = Console::ReadLine();
 
         array<Char>^ chars = s->ToCharArray();
@@ -84,25 +86,25 @@ int main(array<System::String^>^ args)
 
         String^ reversed = gcnew String(chars);
 
-        Console::WriteLine("Реверсований рядок: {0}", reversed);
+        Console::WriteLine("ГђГҐГўГҐГ°Г±Г®ГўГ Г­ГЁГ© Г°ГїГ¤Г®ГЄ: {0}", reversed);
     }
 
     Console::WriteLine("----------------------------------------");
 
-    // Шосте завдання
+    // ГГ®Г±ГІГҐ Г§Г ГўГ¤Г Г­Г­Гї
     {
-        Console::Write("Введіть перший рядок (слова через пробіл): ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј ГЇГҐГ°ГёГЁГ© Г°ГїГ¤Г®ГЄ (Г±Г«Г®ГўГ  Г·ГҐГ°ГҐГ§ ГЇГ°Г®ГЎВіГ«): ");
         String^ s1 = Console::ReadLine();
 
-        Console::Write("Введіть другий рядок (слова через пробіл): ");
+        Console::Write("Г‚ГўГҐГ¤ВіГІГј Г¤Г°ГіГЈГЁГ© Г°ГїГ¤Г®ГЄ (Г±Г«Г®ГўГ  Г·ГҐГ°ГҐГ§ ГЇГ°Г®ГЎВіГ«): ");
         String^ s2 = Console::ReadLine();
 
         if (s1->Length > s2->Length)
-            Console::WriteLine("Перший рядок довший");
+            Console::WriteLine("ГЏГҐГ°ГёГЁГ© Г°ГїГ¤Г®ГЄ Г¤Г®ГўГёГЁГ©");
         else if (s1->Length < s2->Length)
-            Console::WriteLine("Другий рядок довший");
+            Console::WriteLine("Г„Г°ГіГЈГЁГ© Г°ГїГ¤Г®ГЄ Г¤Г®ГўГёГЁГ©");
         else
-            Console::WriteLine("Рядки однакової довжини");
+            Console::WriteLine("ГђГїГ¤ГЄГЁ Г®Г¤Г­Г ГЄГ®ГўГ®Вї Г¤Г®ГўГ¦ГЁГ­ГЁ");
     }
 
     return 0;
